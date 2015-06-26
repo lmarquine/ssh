@@ -4,6 +4,7 @@ Simple SSH client in PHP
 SSH connection with simple user and password authentication
 -----------------------------------------------------------
 
+```php
     <?php
     use Neto\net\ssh\SSHConnection;
     use Neto\net\ssh\auth\SSHPasswordAuthentication;
@@ -24,10 +25,12 @@ SSH connection with simple user and password authentication
     
         $directoryIterator->next();
     }
+```
 
 SSH connection with user's public key
 -------------------------------------
 
+```php
     <?php
     use Neto\net\ssh\SSHConnection;
     use Neto\net\ssh\auth\SSHPublicKeyAuthentication;
@@ -51,3 +54,4 @@ SSH connection with user's public key
     
         $directoryIterator->next();
     }
+```
